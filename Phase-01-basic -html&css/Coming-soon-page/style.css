@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(135deg, #8a2be2, #4169e1);
+}
+.content {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+input[type="email"] {
+  padding: 7px;
+  border: 1px solid #ccc;
+}
+input {
+  margin-bottom: 0.9rem;
+  border: none;
+  border-radius: 5px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: #8a2be2;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+}
+h1 {
+  color: #333;
+}
+p {
+  color: #666;
+}
+img {
+  object-fit: contain;
+}
+button:hover {
+  background-color: #7a1dd1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+footer {
+  background: linear-gradient(135deg, #8a2be2, #4169e1);
+  text-align: center;
+  color: #c9c9c9;
+  padding: 0.8rem;
+}
