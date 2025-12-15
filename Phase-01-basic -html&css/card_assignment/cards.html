@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <a href="#" class="logo">
+          <div class="logo-icon">
+            <img src="./tshirt.png" alt="logo" width="20px" />
+          </div>
+          Aero
+        </a>
+
+        <!-- Hamburge -->
+        <div class="hamburger" onclick="togglemenue()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="navlinks" id="navlinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Sports</a></li>
+          <li><a href="#" class="btn">Log In</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="content">
+      <h1>Welcome to Our This Week's Speacial List !</h1>
+      <div class="card-container">
+        <div class="grid-content">
+          <div class="cards">
+            <img src="./AIR+FORCE+1+GTX+VIBRAM.avif" alt="" />
+            <p>
+              A special shoe that fits the today's trend. Buy one to get one
+              free.
+            </p>
+            <div class="card-buttons">
+              <button type="submit">Add to Cart</button>
+              <button
+                type="submit"
+                style="padding-left: 20px; padding-right: 20px"
+              >
+                Buy
+              </button>
+            </div>
+          </div>
+          <div class="cards">
+            <img src="./6006723-001_DEFAULT.avif" alt="" />
+            <p>
+              A special shoe that fits the today's trend. Buy one to get one
+              free.
+            </p>
+            <div class="card-buttons">
+              <button type="submit">Add to Cart</button>
+              <button
+                type="submit"
+                style="padding-left: 20px; padding-right: 20px"
+              >
+                Buy
+              </button>
+            </div>
+          </div>
+          <div class="cards">
+            <img src="./6006062-100_A.avif" alt="" />
+            <p>
+              A special shoe that fits the today's trend. Buy one to get one
+              free.
+            </p>
+            <div class="card-buttons">
+              <button type="submit">Add to Cart</button>
+              <button
+                type="submit"
+                style="padding-left: 20px; padding-right: 20px"
+              >
+                Buy
+              </button>
+            </div>
+          </div>
+          <div class="cards">
+            <img src="./AIR+FORCE+1+GTX+VIBRAM.avif" alt="" />
+            <p>
+              A special shoe that fits the today's trend. Buy one to get one
+              free.
+            </p>
+            <div class="card-buttons">
+              <button type="submit">Add to Cart</button>
+              <button
+                type="submit"
+                style="padding-left: 20px; padding-right: 20px"
+              >
+                Buy
+              </button>
+            </div>
+          </div>
+          <div class="cards">
+            <img src="./6006723-001_DEFAULT.avif" alt="" />
+            <p>
+              A special shoe that fits the today's trend. Buy one to get one
+              free.
+            </p>
+            <div class="card-buttons">
+              <button type="submit">Add to Cart</button>
+              <button
+                type="submit"
+                style="padding-left: 20px; padding-right: 20px"
+              >
+                Buy
+              </button>
+            </div>
+          </div>
+          <div class="cards">
+            <img src="./6006062-100_A.avif" alt="" />
+            <p>
+              A special shoe that fits the today's trend. Buy one to get one
+              free.
+            </p>
+            <div class="card-buttons">
+              <button type="submit">Add to Cart</button>
+              <button
+                type="submit"
+                style="padding-left: 20px; padding-right: 20px"
+              >
+                Buy
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function togglemenue() {
+        const nav = document.getElementById("navlinks");
+        const burger = document.querySelector(".hamburger");
+        nav.classList.toggle("open");
+        burger.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
