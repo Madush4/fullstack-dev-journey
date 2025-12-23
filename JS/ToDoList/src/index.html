@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body
+    class="min-h-screen"
+    style="background: linear-gradient(to bottom right, #faf5ff, #fce7f3)"
+  >
+    <div
+      class="flex justify-center items-center min-h-screen text-gray-800 flex-col w-full px-4 py-8"
+    >
+      <div class="text-center mb-8">
+        <h1 class="text-4xl font-bold text-gray-800 mb-2">To Do List</h1>
+        <p class="text-gray-600">Stay organized and productive</p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-xl p-6 w-full max-w-2xl">
+        <div class="flex gap-3 mb-6">
+          <input
+            type="text"
+            class="flex-1 px-4 py-3 text-base border-2 border-gray-200 rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all"
+            placeholder="Add a new task..."
+            id="todoInput"
+          />
+          <button
+            id="addBtn"
+            class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-700 active:scale-95 transition-all shadow-md hover:shadow-lg cursor-pointer"
+          >
+            Add Task
+          </button>
+        </div>
+
+        <div class="border-t border-gray-200 mb-4"></div>
+
+        <ul id="todoList" class="space-y-3"></ul>
+
+        <div id="emptyState" class="text-center py-12 text-gray-400">
+          <svg
+            class="w-16 h-16 mx-auto mb-4 opacity-50"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+            ></path>
+          </svg>
+          <p class="text-lg font-medium">No tasks yet</p>
+          <p class="text-sm mt-1">Add a task to get started</p>
+        </div>
+      </div>
+
+      <div class="mt-6 text-center text-gray-600 text-sm">
+        <p>Press Enter to quickly add tasks</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
