@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body
+    class="min-h-screen bg-linear-to-r from-indigo-400 to-blue-400 flex items-center justify-center"
+  >
+    <div
+      class="bg-slate-200 flex flex-col px-4 py-5 rounded-lg w-full max-w-md"
+    >
+      <h2 class="text-center text-3xl font-mono mb-4 font-bold text-slate-800">
+        Weather API
+      </h2>
+      <div class="border-t border-gray-400 mb-4"></div>
+      <div>
+        <label for="city" class="block font-medium mb-2 text-slate-700 text-lg"
+          >City</label
+        >
+        <div class="flex justify-around mb-5">
+          <input
+            type="text"
+            placeholder="Enter city name here"
+            id="city-input"
+            class="border border-slate-500 rounded-md px-4 py-2 flex-1 mr-2"
+          />
+          <button
+            class="border border-slate-400 rounded-lg text-sm px-2 cursor-pointer text-slate-700"
+            id="get-weather-btn"
+          >
+            Search
+          </button>
+        </div>
+
+        <div id="weather-info" class="hidden">
+          <h2 id="city-name"></h2>
+          <p id="temperature"></p>
+          <p id="description"></p>
+        </div>
+        <p id="error-message" class="hidden">
+          City not found. Please try again
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
