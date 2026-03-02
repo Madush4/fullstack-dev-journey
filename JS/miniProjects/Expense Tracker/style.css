@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  min-width: 700px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto 20px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2px;
+  gap: 4px;
+}
+.container {
+  display: flex;
+  max-width: 500px;
+  width: 100%;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 4rem;
+  border-radius: 15px;
+  box-shadow: 1px 4px 4px;
+}
+.expense-box {
+  margin-bottom: 5px;
+}
+.line {
+  background-color: #fff;
+  height: 0.5px;
+  width: 100%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+.delete-btn {
+  padding: 2px 4px;
+  border-radius: 5px;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+form select {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
