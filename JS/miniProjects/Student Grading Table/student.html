@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Grade Calculator</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #1a1a1a;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100dvh;
+        color: #0b0b0b;
+      }
+
+      .container {
+        background-color: #323232;
+        padding: 20px;
+        border-radius: 15px;
+        margin-bottom: 2rem;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      h1 {
+        margin-bottom: 10px;
+      }
+      label {
+        margin-bottom: 10px;
+      }
+      input {
+        margin-bottom: 10px;
+        padding: 5px;
+      }
+      .student-table {
+        background-color: #3b3b3b;
+      }
+      table {
+        border-collapse: collapse;
+        border-radius: 15px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid white;
+        padding: 9px;
+      }
+      .average {
+        background-color: #2b2b2b;
+        text-align: start;
+        padding: 7px;
+      }
+      #average,p{
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Stduents Grade Report</h1>
+      <form id="studentForm">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="student-name"
+          placeholder="Enter Student Name:"
+        />
+        <label for="mark">Mark:</label>
+        <input
+          type="number"
+          name="mark"
+          id="mark"
+          min="0"
+          max="100"
+          placeholder="Enter Student Mark:"
+          required
+        />
+        <input type="submit" name="" id="submit-btn" />
+      </form>
+    </div>
+    <div class="student-table">
+      <table id="studentMark-table">
+        <tr>
+          <th>Student Name</th>
+          <th>Mark</th>
+          <th>Status</th>
+          <th>Grade</th>
+        </tr>
+        <tbody id="table-body"></tbody>
+      </table>
+      <p class="average">Average: <span id="average"></span></p>
+    </div>
+
+    <script src="student.js"></script>
+  </body>
+</html>
