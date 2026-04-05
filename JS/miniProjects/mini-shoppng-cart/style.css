@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.product-list {
+    margin: 7px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  gap: 7px;
+ 
+}
+
+.product{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 5px;
+}
+.product img{
+    border-radius: 5px;
+}
+
+.product button{
+
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+
+
+
+
