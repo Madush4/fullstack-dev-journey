@@ -50,7 +50,7 @@ function App() {
         {todos.map((todo, index) => (
           <div
             key={index}
-            className="bg-white px-4 py-3 rounded-lg mb-2 shadow-sm flex justify-between items-center"
+             className="bg-white px-4 py-3 rounded-lg mb-2 shadow-sm flex justify-between items-center"
           >
             <p
               className={`text-gray-700 cursor-pointer ${todo.completed ? "line-through text-gray-400" : ""}`}

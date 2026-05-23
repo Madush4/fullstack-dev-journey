@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [];
+
+      for (let i = 0; i < 5; i++) {
+        let ans = prompt("Enter a number");
+        arr.push(Number(ans));
+      }
+
+      for (const y of arr) {
+        console.log(y);
+      }
+
+      let newArr = arr.filter((i) => i !== 3);
+      console.log(newArr);
+
+      let newArr2 = arr.map((x) => x * x);
+      console.log(newArr2);
+    </script>
+  </body>
+</html>
