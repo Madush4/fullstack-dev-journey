@@ -33,8 +33,25 @@ function Counter(){
 
 }
 
+function Car(props){
+  return (
+    <h2>This is my {props.brand}</h2>
+  )
+}
+
+{/* This is the destructuring props */}
+
+function Person({name,age}){  
+  return (
+    <>
+      <h2>Name : {name}</h2>
+      <h2>Age : {age}</h2>
+    </>
+  );
+}
+
 createRoot(document.getElementById("root")).render(
   <>
-   <Counter />
+  <Person name="Madusha" age={22} />
   </>,
 );
