@@ -50,8 +50,45 @@ function Person({name,age}){
   );
 }
 
+function Car2(props){
+    const {brand = "BMW",model} = props
+    {/* I am using a defualt value here */}
+  return (
+      <h2>I love my {brand} {model}</h2>
+  )
+}
+
+{/* ...rest is used when there are unknown no of objects to store*/}
+
+function Employee({name, age , ...rest}){
+
+  return (
+    <h2>Mr {name} is {age} years old and he has a {rest.color} {rest.model}  </h2>
+  )
+}
+
+function FormValidation(){
+
+    const [name, setName] = useState("");
+    function handleChange(e){
+        setName(e.target.value);
+    }
+
+    return (
+
+      <>
+        <form action="">
+          <input type="text" value={name} onChange={handleChange} />
+        </form>
+        <p>You typed: {name}</p>
+      </>
+
+
+    );
+
+}
 createRoot(document.getElementById("root")).render(
   <>
-  <Person name="Madusha" age={22} />
+   <FormValidation />
   </>,
 );
