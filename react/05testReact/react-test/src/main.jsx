@@ -87,8 +87,31 @@ function FormValidation(){
     );
 
 }
+
+function ColorButtons(){
+  const [color, setColor] = useState("red");
+
+    function changeColor(newColor){
+      setColor(newColor);
+      document.body.style.backgroundColor = newColor
+    }
+  return (
+    <>
+      <button type="button" onClick={() => changeColor("Green")}>
+        Green
+      </button>
+      <button type="button" onClick={() => changeColor("Red")}>
+        Red
+      </button>
+      <button type="button" onClick={() => changeColor("Blue")}>
+        Blue
+      </button>
+    </>
+  );
+}
+
 createRoot(document.getElementById("root")).render(
   <>
-   <FormValidation />
+   <ColorButtons />
   </>,
 );
