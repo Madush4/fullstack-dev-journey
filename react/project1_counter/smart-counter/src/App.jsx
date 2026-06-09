@@ -1,5 +1,6 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import "./App.css";
+import Child from "./child.jsx";
 
 function SmartCounter() {
   const [count, setCount] = useState(0);
@@ -41,4 +42,18 @@ function SmartCounter() {
   );
 }
 
-export default SmartCounter;
+function ParentComponent() {
+  const [count, setCount] = useState(0);
+  const showUser = useCallback(() =>{
+      console.log("Madush");;
+  },[])
+
+  return (
+    <>
+      <button onClick={()=> {setCount(count+1)}}>Increment {count}</button>
+      <Child showUser = {showUser}/>
+    </>
+  );
+}
+
+export default ParentComponent;
