@@ -1,0 +1,5 @@
+@import "tailwindcss";
+/* App.css or index.css */
+.text-outline {
+  -webkit-text-stroke: 0.5px rgb(18, 63, 152);
+}

@@ -22,8 +22,8 @@ function App() {
     setConvertedAmount(amount * currencyInfo[to]);
   };
   return (
-    <div
-      className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
+    <div className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
+     
       style={{
         backgroundImage: `url(https://i.pinimg.com/736x/a0/57/af/a057afe4ded4705c350f58f5be2521af.jpg)`,
       }}
