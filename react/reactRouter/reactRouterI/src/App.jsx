@@ -10,20 +10,18 @@ function App() {
  
 
   return (
-   <div className='min-h-screen bg-zinc-950 text-white'>
+    <div className="min-h-screen bg-zinc-950 text-white">
       <Navbar />
-
-      <Routes>
-        <Route path="/" element = {<Home />}/>
-        <Route path="/about" element = {<About />} />
-        <Route path="/project" element = {<Projects />} />
-        <Route path="/Contact" element = {<Contact />} />
-      </Routes>
-
-    
-
-   </div>
-  )
+      <main className=" pt-20 px-7 max-w-5xl mx-auto sm:px-6 lg:px-8">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+    </div>
+  );
 }
 
 export default App

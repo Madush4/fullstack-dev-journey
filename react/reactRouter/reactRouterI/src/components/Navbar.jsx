@@ -17,20 +17,34 @@ function Navbar() {
           Madush
         </span>
         <ul className="flex gap-6">
-          {links.map(link => (
-            <li key={link.to}>
-              <NavLink
-                to={link.to}
-                end
-                className={({isActive}) => 
-                  `text-sm transition-colors duration-200  ${isActive ? "text-white font-semibold" : "text-zinc-400 hover:text-white"}`
-                }
-              >
-                {link.label}
-              </NavLink>
-            </li>
-          ))}
+          {links
+            .filter((link) => link.to !== "/contact")
+            .map((link) => (
+              <li key={link.to}>
+                <NavLink
+                  to={link.to}
+                  end
+                  className={({ isActive }) =>
+                    `text-sm transition-colors duration-200  ${isActive ? "text-white font-semibold" : "text-zinc-400 hover:text-white"}`
+                  }
+                >
+                  {link.label}
+                </NavLink>
+              </li>
+            ))}
         </ul>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            `text-sm transition-colors duration-200 px-4 py-2  rounded-lg shadow-lg ${
+              isActive
+                ? "text-white font-semibold bg-red-600"
+                : "text-zinc-200 hover:text-white bg-red-500/80"
+            }`
+          }
+        >
+          Contact
+        </NavLink>
       </div>
     </nav>
   );
