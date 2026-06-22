@@ -50,6 +50,24 @@ function Header() {
           >
             Products
           </NavLink>
+          <NavLink
+            to="/user"
+            end
+            className={({ isActive }) =>
+              `text-sm ${isActive ? "text-white font-bold" : " text-zinc-300 font-light"}`
+            }
+          >
+            User
+          </NavLink>
+          <NavLink
+            to="/github"
+            end
+            className={({ isActive }) =>
+              `text-sm${isActive ? "text-white font-bold" : " text-zinc-300 font-light"}`
+            }
+          >
+          GitHub
+          </NavLink>
         </div>
         <NavLink
           to="/login"

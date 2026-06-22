@@ -2,7 +2,7 @@ import React from 'react'
 
 function Home() {
   return (
-    <div className="flex flex-col items-center justify-center bg-zinc-800 min-h-s
+    <div className="flex flex-col items-center justify-center bg-zinc-800 min-h-screen
      w-full mx-auto">
       <section className="text-center bg-green-200  shadow w-full p-3 text-gray-00 text-xs font-bold">
         <p>Experience the best products and services tailored just for you.</p>

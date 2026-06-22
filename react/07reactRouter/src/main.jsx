@@ -1,14 +1,21 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import {createBrowserRouter, RouterProvider, createRoutesFromElements, Route} from 'react-router-dom'
-import Layout from './Layout.jsx'
-import Home from './components/Home/Home.jsx'
-import About  from './components/About/About.jsx'
-import Contact  from './components/Contact/Contact.jsx'
-import Products from './components/Products/Products.jsx'
-import Login from './components/Login/Login.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.jsx";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  createRoutesFromElements,
+  Route,
+} from "react-router-dom";
+import Layout from "./Layout.jsx";
+import Home from "./components/Home/Home.jsx";
+import About from "./components/About/About.jsx";
+import Contact from "./components/Contact/Contact.jsx";
+import Products from "./components/Products/Products.jsx";
+import Login from "./components/Login/Login.jsx";
+import User from "./components/User/User.jsx";
+import Github, { githubInfoLoader } from "./components/Github/Github.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,11 +25,16 @@ const router = createBrowserRouter(
       <Route path="contact" element={<Contact />} />
       <Route path="products" element={<Products />} />
       <Route path="login" element={<Login />} />
+      <Route path="user/" element={<User />}>
+        <Route path=":userid" element={<User />} />
+      </Route>
+      <Route loader={githubInfoLoader} path="github" element={<Github />} />
+      <Route path="*" element={<div>Page Not Found !</div>} />
     </Route>,
   ),
 );
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-  <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </StrictMode>,
-)
+);
